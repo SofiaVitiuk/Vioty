@@ -191,3 +191,76 @@ body {
   left: 54%;
   transform: translateX(-50%);
 }
+
+/* products */
+.products {
+  margin-top: 120px;
+}
+
+.products-flexbox {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+.products-title {
+  color: var(--main-color, #ffffff);
+  font-family: 'Manrope', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 94%;
+  letter-spacing: -3.92px;
+  opacity: 0.9;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.products-buttons {
+  display: flex;
+  gap: 18px;                     
+  background-color: transparent;  
+  padding: 0; 
+}
+
+.products-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.products-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.products-btn:active {
+  transform: scale(0.95);
+}
+
+.products-btn::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+
+.products-btn.prev::after {
+  transform: rotate(-135deg);
+  margin-left: 2px;
+}
+
+.products-btn.next::after {
+  transform: rotate(45deg);
+  margin-right: 2px;
+}
