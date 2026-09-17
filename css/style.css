@@ -152,6 +152,11 @@ body {
 }
 
 /* about */
+.about {
+  margin-top: 60px;
+  position: relative;
+}
+
 .about-text {
   color: var(--main-color);
   text-align: center;
@@ -169,4 +174,20 @@ body {
 
 .about-img {
   position: absolute;
+}
+
+.about-img-nuts {
+  bottom: 215px;
+  right: 16%;
+}
+
+.about-img-milk {
+  bottom: 20px;
+  left: 11%;
+}
+
+.about-img-strawberry {
+  bottom: -45px;
+  left: 54%;
+  transform: translateX(-50%);
 }
