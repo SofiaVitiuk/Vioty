@@ -341,9 +341,13 @@ body {
 }
 
 /* how-to-order */
+.how-to-order-box {
+  display: flex;
+} 
+
 .how-to-order {
   margin-top: 120px;
-  display: flex;
+  /* display: flex;  */
 }
 
 .how-to-order-article {
@@ -432,3 +436,14 @@ body {
   display: flex;
   gap: 12px;
 }
+
+.how-to-order-img {
+  width: 161px;
+  height: 156px;
+}
+
+
+/* .how-to-order-picture {
+  max-width: 782px;
+  max-height: 810px;
+} */
