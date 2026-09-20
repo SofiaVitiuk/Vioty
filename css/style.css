@@ -47,6 +47,10 @@ body {
   line-height: normal;
 }
 
+.header-link:hover {
+  color: var(--button-color);
+}
+
 .header-items {
   display: flex;
   gap: 15px;
@@ -62,21 +66,6 @@ body {
   justify-content: center;
   border-radius: 50%;
 }
-
-/* .header-img {
-  width: 10px;
-  height: 15px;
-} */
-
-/* .header-img :first-child {
-  width: 15px;
-  height: 15px;
-} */
-
-/* .header-img:first-child {
-  width: 15px;
-  height: 15px;
-} */
 
 .header-img:nth-child(2) {
   width: 10px;
@@ -145,6 +134,10 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
+}
+
+.hero-btn:hover {
+  background-color: #c42052;
 }
 
 .hero-img {
@@ -223,6 +216,7 @@ body {
   gap: 18px;                     
   background-color: transparent;  
   padding: 0; 
+   margin-left: 872px;
 }
 
 .products-btn {
@@ -263,4 +257,87 @@ body {
 .products-btn.next::after {
   transform: rotate(45deg);
   margin-right: 2px;
+}
+
+/* Список продуктів */
+.products-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto; /* Дозволяє скролити картки на телефоні */
+}
+
+/* Одна картка */
+.products-li {
+  flex: 297 520; /* Фіксована ширина картки, щоб не стискались */
+}
+
+.products-box {
+  background-color: var(--card-bg);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.products-img {
+  width: 297px;
+  margin-bottom: 24px;
+}
+
+.products-name {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-left: 30px;
+}
+
+.products-desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  margin-left: 30px;
+}
+
+.products-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  margin-left: 30px;
+}
+
+.products-price {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.products-old-price {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  text-decoration: line-through;
+  /* margin-bottom: 5px; */
+}
+
+/* Рожева кнопка купити всередині картки */
+.products-action-btn {
+  background-color: var(--button-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: auto; 
+}
+
+.products-action-btn:hover {
+  background-color: #c42052;
 }
